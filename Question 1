@@ -1,7 +1,7 @@
 PART A
 public int countNotInVocab(String[] wordArray){
   int count=0;
-  for(int i=0; i<wordArray.size(); i++){
+  for(int i=0; i<wordArray.length; i++){
     String word=wordArray.get(i);
     if(findWord(word)==false) count++
   }
@@ -13,7 +13,7 @@ public String[] notInVocab(String[] wordArray){
   int l=countNotInVocab(wordArray); 
   String[] ans= new String[l];
   int ansindex=0;
-  for(int i=0; i<=wordArray.size(); i++){
+  for(int i=0; i<=wordArray.length; i++){
     String word=wordArray.get(i);
     if(findWord(word)==false){
       ans[ansindex]=word;
